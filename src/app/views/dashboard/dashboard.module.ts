@@ -7,7 +7,7 @@ import { NgChartsModule } from "ng2-charts";
 import { NgxEchartsModule } from "ngx-echarts";
 import { SharedPipesModule } from "app/shared/pipes/shared-pipes.module";
 import { DashboardRoutes } from "./dashboard.routing";
-import { AnalyticsComponent } from "./analytics/analytics.component";
+import { InicioComponent } from "./inicio/inicio.component";
 
 @NgModule({
   imports: [
@@ -21,7 +21,7 @@ import { AnalyticsComponent } from "./analytics/analytics.component";
     SharedPipesModule,
     RouterModule.forChild(DashboardRoutes)
   ],
-  declarations: [AnalyticsComponent],
+  declarations: [InicioComponent],
   exports: []
 })
 export class DashboardModule {}

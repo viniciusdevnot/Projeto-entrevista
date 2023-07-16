@@ -36,4 +36,9 @@ export class AppGalleryComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  enviar(){
+    alert('Botão clicado!');
+  }
+
 }

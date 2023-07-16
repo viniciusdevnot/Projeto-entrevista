@@ -22,6 +22,10 @@ export class HeaderTopComponent implements OnInit, OnDestroy {
   }, {
     name: 'Spanish',
     code: 'es',
+  },
+  {
+    name: 'Portugues',
+    code: 'br',
   }]
   @Input() notificPanel;
   constructor(

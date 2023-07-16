@@ -1,11 +1,11 @@
 import { Routes } from "@angular/router";
 
-import { AnalyticsComponent } from "./analytics/analytics.component";
+import { InicioComponent } from "./inicio/inicio.component";
 
 export const DashboardRoutes: Routes = [
   {
     path: "analytics",
-    component: AnalyticsComponent,
+    component: InicioComponent,
     data: { title: 'Analytics', breadcrumb: 'Analytics'}
   }
 ];

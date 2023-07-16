@@ -15,12 +15,12 @@ export class ThemeService {
   public matxThemes: ITheme[]  = [
   {
     'name': 'matx-navy',
-    'baseColor': '#10174c',
+    'baseColor': 'white',
     'isActive': false
   },
   {
     'name': 'matx-navy-dark',
-    'baseColor': '#0081ff',
+    'baseColor': 'black',
     'isActive': false
   }];
 

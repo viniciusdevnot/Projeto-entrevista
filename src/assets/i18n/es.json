@@ -1,5 +1,5 @@
 {
-  "DASHBOARD": "Tablero",
+  "DASHBOARD": "comenzar",
   "APPS": "Apps",
   "INBOX": "Mensaje",
   "CHAT": "Charla",
@@ -32,7 +32,7 @@
 
   "FORMS": "Formularios",
   "EDITOR": "Editor",
-  "BASIC": "vinicius",
+  "BASIC": "basic",
   "UPLOAD": "Upload",
   "WIZARD": "paso a paso",
 

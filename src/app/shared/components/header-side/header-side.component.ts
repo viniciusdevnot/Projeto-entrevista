@@ -20,6 +20,11 @@ export class HeaderSideComponent implements OnInit {
     name: 'ES',
     code: 'es',
     flag: 'es'
+  },
+  {
+    name: 'BR',
+    code: 'br',
+    flag: 'br'
   }];
   currentLang = this.availableLangs[0];
 
