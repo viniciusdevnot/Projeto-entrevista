@@ -6,6 +6,6 @@ export const DashboardRoutes: Routes = [
   {
     path: "analytics",
     component: InicioComponent,
-    data: { title: 'Analytics', breadcrumb: 'Analytics'}
+    data: { title: 'Inicio', breadcrumb: 'Inicio'}
   }
 ];
