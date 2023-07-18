@@ -32,7 +32,8 @@
 
   "FORMS": "Formularios",
   "EDITOR": "Editor",
-  "BASIC": "basic",
+  "BASIC": "Básico",
+  "REQUESTS": "peticiones",
   "UPLOAD": "Upload",
   "WIZARD": "paso a paso",
 

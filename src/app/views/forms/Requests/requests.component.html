@@ -1,0 +1,49 @@
+<div class="requests">
+    <mat-accordion class="matAcordion">
+        <mat-expansion-panel hideToggle style="width: 100%;">
+            <mat-expansion-panel-header class="PainelTitulo">
+                <mat-panel-title class="tituloCard">
+                    <h1>Requests em Angular</h1>
+                    <mat-icon class="icon">expand_more</mat-icon>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="containerTchu">
+                <div class="imagemMaterial">
+                    <div class="containerTotal">
+                        <div class="titulosRequest">
+                            <img src="../../../../assets/images/httpclient.png" alt="imagem" />
+                            <h1>Conhecendo a API RESTful via Console.log <br><span
+                                    style="color: rgb(73, 73, 73); font-size: 35px;">Veja o conteudo ao
+                                    lado</span></h1>
+                        </div>
+                        <div class="textosImg">
+                            <h1>Realizar requisições HTTP é uma das tarefas mais comuns em SPAs atualmente. É por
+                                meio delas que a aplicação se comunica com APIs RESTful que lhes provêem dados e
+                                funcionalidades. Portanto, saber realizar esse tipo de ação no Angular é fundamental
+                                para todo desenvolvedor que utiliza esse framework.</h1>
+                        </div>
+                    </div>
+                    <div class="iconeRequest">
+                        <mat-icon>arrow_forward_ios</mat-icon>
+                    </div>
+                </div>
+                <div class="conteudoRequest">
+                    <div class="requestsApi">
+                        <h3 style="font-size: 1rem; color: rgb(108, 108, 108);">Exemplos API carros 🚗🚗</h3>
+                        <h2>Para saber o resultado de cada click, aperte f12 e clique em console.</h2>
+                        <button (click)="obterTodosCarros()" class="buttonRequest">Obter Todos <button
+                                class="botaoInterior">TIPO: GET</button></button>
+                        <button (click)="obterSomenteUm()" class="buttonRequest">Obter Somente 1 <button
+                                class="botaoInterior">TIPO: GET POR ID</button></button>
+                        <button (click)="adicionarCarro()" class="buttonRequest">Adicionar <button
+                                class="botaoInterior">TIPO: POST</button></button>
+                        <button (click)="atualizar()" class="buttonRequest">Atualizar <button
+                                class="botaoInterior">TIPO: PUT</button></button>
+                        <button (click)="remover()" class="buttonRequest">Remover <button
+                                class="botaoInterior">TIPO: DELETE</button></button>
+                    </div>
+                </div>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

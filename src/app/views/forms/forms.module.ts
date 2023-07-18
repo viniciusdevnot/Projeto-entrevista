@@ -17,12 +17,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { QuillModule } from 'ngx-quill';
 import { FileUploadModule } from 'ng2-file-upload';
 
-import { BasicFormComponent } from './basic-form/basic-form.component';
+import { RequestsComponent } from './Requests/requests.component';
 import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FormsRoutes } from './forms.routing';
 import { WizardComponent } from './wizard/wizard.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   imports: [
@@ -40,11 +41,12 @@ import { WizardComponent } from './wizard/wizard.component';
     MatButtonModule,
     MatIconModule,
     MatStepperModule,
+    MatExpansionModule,
     FlexLayoutModule,
     QuillModule.forRoot(),
     FileUploadModule,
     RouterModule.forChild(FormsRoutes),
   ],
-  declarations: [RichTextEditorComponent, FileUploadComponent, WizardComponent, BasicFormComponent],
+  declarations: [RichTextEditorComponent, FileUploadComponent, WizardComponent, RequestsComponent],
 })
 export class AppFormsModule {}

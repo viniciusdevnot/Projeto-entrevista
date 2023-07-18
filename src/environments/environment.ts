@@ -9,3 +9,5 @@ export const environment = {
   production: false,
   apiURL: config.apiUrl
 };
+
+export const API_PATH = "http://localhost:3000/"

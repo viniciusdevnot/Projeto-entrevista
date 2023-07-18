@@ -13,18 +13,18 @@ export class HeaderSideComponent implements OnInit {
   @Input() notificPanel;
   @ViewChildren(MatxNotifications2Component) noti;
   public availableLangs = [{
-    name: 'EN',
-    code: 'en',
-    flag: 'us'
+    name: 'BR',
+    code: 'br',
+    flag: 'br'
   }, {
     name: 'ES',
     code: 'es',
     flag: 'es'
   },
   {
-    name: 'BR',
-    code: 'br',
-    flag: 'br'
+    name: 'EN',
+    code: 'en',
+    flag: 'us'
   }];
   currentLang = this.availableLangs[0];
 

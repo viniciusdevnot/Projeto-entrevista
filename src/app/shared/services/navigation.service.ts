@@ -40,7 +40,7 @@ export class NavigationService {
       type: 'separator'
     },
     {
-      name: 'BASIC',
+      name: 'REQUESTS',
       state: 'forms/basic',
       type: 'link',
       icon: 'description',
