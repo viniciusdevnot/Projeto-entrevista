@@ -18,10 +18,5 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
  
   }
-  ngOnDestroy() {
- 
-  }
-
-
 
 }
