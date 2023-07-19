@@ -4,7 +4,7 @@ import { InicioComponent } from "./inicio/inicio.component";
 
 export const DashboardRoutes: Routes = [
   {
-    path: "analytics",
+    path: 'inicio',
     component: InicioComponent,
     data: { title: 'Inicio', breadcrumb: 'Inicio'}
   }

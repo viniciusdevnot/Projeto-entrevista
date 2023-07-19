@@ -7,15 +7,20 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { AppLoaderService } from '../../../shared/services/app-loader/app-loader.service';
 import { JwtAuthService } from '../../../shared/services/auth/jwt-auth.service';
+import { LoginService } from 'app/views/resources/services/login.service';
+import { AlertService } from 'app/views/resources/services/alert.service';
+import { RequestLogin } from 'app/views/resources/models/RequestLogin';
 
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.css']
+  styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild(MatProgressBar) progressBar: MatProgressBar;
   @ViewChild(MatButton) submitButton: MatButton;
+  
+  public requestLogin: RequestLogin;
 
   signinForm: UntypedFormGroup;
   errorMsg = '';
@@ -26,13 +31,16 @@ export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private jwtAuth: JwtAuthService,
     private matxLoader: AppLoaderService,
+    private route: ActivatedRoute,
     private router: Router,
-    private route: ActivatedRoute
+    private loginService: LoginService,
+    private alertService: AlertService
   ) {
     this._unsubscribeAll = new Subject();
   }
 
   ngOnInit() {
+    this.requestLogin = new RequestLogin;
     this.signinForm = new UntypedFormGroup({
       username: new UntypedFormControl('Watson', Validators.required),
       password: new UntypedFormControl('12345678', Validators.required),
@@ -80,6 +88,21 @@ export class SigninComponent implements OnInit, AfterViewInit, OnDestroy {
       console.log('autoSignIn');
       this.matxLoader.close()
     }, 2000);
+  }
+
+  public doLogin(): void {
+
+
+    this.loginService.doLogin(this.requestLogin).subscribe(data => {
+      this.signin()
+      //primeira callback é de sucess
+    },
+      (httpError) => {
+        this.alertService.error(httpError.error.message);
+          return;
+    
+        //segunda callback é de error
+      });
   }
 
 }

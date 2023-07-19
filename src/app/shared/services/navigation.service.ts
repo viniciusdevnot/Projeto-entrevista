@@ -31,7 +31,7 @@ export class NavigationService {
   iconMenu: IMenuItem[] = [
     {
       name: 'DASHBOARD',
-      state: 'dashboard/analytics',
+      state: 'dashboard/inicio',
       type: 'link',
       icon: 'dashboard',
     },

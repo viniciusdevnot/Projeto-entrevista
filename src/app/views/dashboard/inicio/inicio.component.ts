@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import {
   Component,
   OnInit,
@@ -10,11 +11,17 @@ import {
 })
 export class InicioComponent implements OnInit {
 
-  constructor (){}
+  constructor (
+    private router: Router
+  ){}
 
   ngOnInit() {
-   
+ 
   }
+  ngOnDestroy() {
+ 
+  }
+
 
 
 }
