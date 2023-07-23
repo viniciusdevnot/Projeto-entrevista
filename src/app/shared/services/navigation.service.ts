@@ -46,8 +46,8 @@ export class NavigationService {
       icon: 'description',
     },
     {
-      name: 'EDITOR',
-      state: 'forms/editor',
+      name: 'EFEITOS',
+      state: 'forms/efeitos',
       type: 'link',
       icon: 'subject',
     },

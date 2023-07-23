@@ -18,12 +18,14 @@ import { QuillModule } from 'ngx-quill';
 import { FileUploadModule } from 'ng2-file-upload';
 
 import { RequestsComponent } from './Requests/requests.component';
-import { RichTextEditorComponent } from './rich-text-editor/rich-text-editor.component';
+import { EfeitosComponent } from './efeitos-visuais/efeitos.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { FormsRoutes } from './forms.routing';
 import { WizardComponent } from './wizard/wizard.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { EfeitosComponentAuxiliarComponent } from '../efeitos-component-auxiliar/efeitos-component-auxiliar.component';
+import { ButtonEfeitoComponent } from '../button-efeito/button-efeito.component';
 
 @NgModule({
   imports: [
@@ -47,6 +49,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     FileUploadModule,
     RouterModule.forChild(FormsRoutes),
   ],
-  declarations: [RichTextEditorComponent, FileUploadComponent, WizardComponent, RequestsComponent],
+  declarations: [EfeitosComponent, FileUploadComponent, WizardComponent, RequestsComponent,EfeitosComponentAuxiliarComponent, ButtonEfeitoComponent],
 })
 export class AppFormsModule {}
