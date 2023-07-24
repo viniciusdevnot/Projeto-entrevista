@@ -21,7 +21,6 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { SharedModule } from './../../shared/shared.module';
 
 import { AppGalleryComponent } from './app-gallery/app-gallery.component';
-import { AppPricingComponent } from './app-pricing/app-pricing.component';
 import { AppUsersComponent } from './app-users/app-users.component';
 import { AppBlankComponent } from './app-blank/app-blank.component';
 import { OthersRoutes } from "./others.routing";
@@ -54,7 +53,6 @@ import { Nested3Component } from './nested3/nested3.component';
   ],
   declarations: [
     AppGalleryComponent, 
-    AppPricingComponent, 
     AppUsersComponent, 
     AppBlankComponent, Nested1Component, Nested2Component, Nested3Component
   ]

@@ -85,23 +85,17 @@ export class NavigationService {
       icon: 'blur_on',
       sub: [
         { name: 'GALLERY', state: 'others/gallery' },
-        { name: 'PRICINGS', state: 'others/pricing' },
         { name: 'USERS', state: 'others/users' },
         { name: 'BLANK', state: 'others/blank' }
       ]
     },
-    {
-      name: 'Pro',
-      type: 'extLink',
-      icon: 'upgrade',
-      state: 'http://matx-angular.ui-lib.com/'
-    },
+  
     {
       name: 'DOC',
       type: 'extLink',
       tooltip: 'Documentation',
       icon: 'library_books',
-      state: 'http://demos.ui-lib.com/matx-doc/'
+      state: 'sessions/404'
     }
   ];
 
