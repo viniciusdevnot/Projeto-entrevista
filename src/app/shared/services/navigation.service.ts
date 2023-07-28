@@ -52,8 +52,8 @@ export class NavigationService {
       icon: 'subject',
     },
     {
-      name: 'UPLOAD',
-      state: 'forms/upload',
+      name: 'TESTES',
+      state: 'forms/testes',
       type: 'link',
       icon: 'upload',
     },

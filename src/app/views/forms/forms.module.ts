@@ -19,7 +19,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 
 import { RequestsComponent } from './Requests/requests.component';
 import { EfeitosComponent } from './efeitos-visuais/efeitos.component';
-import { FileUploadComponent } from './file-upload/file-upload.component';
+import { TestesUnitarios } from './testes-unitarios/testes-unitarios.component';
 
 import { FormsRoutes } from './forms.routing';
 import { WizardComponent } from './wizard/wizard.component';
@@ -49,6 +49,6 @@ import { ButtonEfeitoComponent } from '../button-efeito/button-efeito.component'
     FileUploadModule,
     RouterModule.forChild(FormsRoutes),
   ],
-  declarations: [EfeitosComponent, FileUploadComponent, WizardComponent, RequestsComponent,EfeitosComponentAuxiliarComponent, ButtonEfeitoComponent],
+  declarations: [EfeitosComponent, TestesUnitarios, WizardComponent, RequestsComponent,EfeitosComponentAuxiliarComponent, ButtonEfeitoComponent],
 })
 export class AppFormsModule {}

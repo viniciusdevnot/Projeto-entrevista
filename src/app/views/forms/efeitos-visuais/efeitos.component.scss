@@ -765,3 +765,16 @@ html {
 *:before, *:after {
   box-sizing: border-box;
 }
+
+.titulos{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
